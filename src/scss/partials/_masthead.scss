@@ -1,0 +1,39 @@
+// Styling for the masthead
+header.masthead {
+  text-align: center;
+  color: $gray-900;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  @include background-cover;
+  .intro-text {
+    padding-top: 110px;
+
+    h4.subtitle {
+      font-weight: 500;
+      padding-top: 10px;
+    }
+
+    .btn-signup {
+      padding: 10px 60px;
+      border-radius: 50px;
+      background-color: $primary;
+      color: $gray-900;
+    }
+  }
+
+  .img-container {
+    padding-top: 20px;
+  }
+}
+
+@media(min-width:768px) {
+  #about.masthead {
+    background-color: #fcfcfc;
+    .intro-text {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+  }
+
+}

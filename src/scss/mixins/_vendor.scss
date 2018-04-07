@@ -1,0 +1,14 @@
+@mixin vendor ($property, $value) {
+    -webkit-#{$property}:$value;
+    -moz-#{$property}:$value;
+    -ms-#{$property}:$value;
+    -o-#{$property}:$value;
+    #{$property}:$value;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
