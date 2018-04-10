@@ -1,0 +1,67 @@
+// Styling for the sections
+
+#thingsToDo {
+	.view {
+	   margin: 30px auto 0;
+	   position: relative;
+	}
+
+	.view-first img {
+	   object-fit: cover;
+	   width: auto;
+	   height: 300px;
+	}
+}
+
+
+
+#section-4 {
+	background-color: #000;
+
+	h3 {
+		color: #fff;
+	}
+
+	.btn-main-dark {
+		width: 100%;
+	    color: #000;
+	    text-transform: capitalize !important;
+	}
+}
+
+#section-5 {
+	.view {
+		margin: 30px auto 0;
+		position: relative;
+	}
+
+	img {
+	   object-fit: cover;
+	   width: auto;
+	   height: 300px;
+	}
+
+	.caption {
+		text-align: left;
+		padding: 10px 0;
+		
+		h2, p {
+			color: #000;
+		}
+	}
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+@media(max-width:767px) {
+	#services {
+		section {
+			h3.section-subheading {
+				margin-bottom: 25px;
+			}
+		}
+	}
+}

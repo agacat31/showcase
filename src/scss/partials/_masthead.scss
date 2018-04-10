@@ -1,13 +1,15 @@
 // Styling for the masthead
 header.masthead {
+  background: rgba(0,0,0,0.4);
   text-align: center;
   color: $gray-900;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center center;
   @include background-cover;
   .intro-text {
     padding-top: 110px;
+    color: $white;
 
     h4.subtitle {
       font-weight: 500;
@@ -22,18 +24,17 @@ header.masthead {
     }
   }
 
-  .img-container {
-    padding-top: 20px;
+  .parallax-window {
+      height: 100vh;
+      background: transparent;
   }
 }
 
 @media(min-width:768px) {
-  #about.masthead {
-    background-color: #fcfcfc;
-    .intro-text {
-      padding-top: 200px;
-      padding-bottom: 200px;
-    }
+  header.masthead {
+    padding: 150px 0;
+    height: 100vh;
+    width: 100vw;
   }
 
 }

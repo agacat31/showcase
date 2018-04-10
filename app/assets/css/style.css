@@ -419,7 +419,7 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0 100px; } }
+    padding: 100px 0 30px; } }
 
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -458,6 +458,9 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #fed136; }
+
+.no-padding {
+  padding: 0 !important; }
 
 .shadow-100 {
   -ms-box-shadow: 0px 3px 13px 0px #e1e1e5;
@@ -601,14 +604,16 @@ footer {
         margin-left: 70px; } }
 
 header.masthead {
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
   color: #212529;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center center;
   background-size: cover; }
   header.masthead .intro-text {
-    padding-top: 110px; }
+    padding-top: 110px;
+    color: #fff; }
     header.masthead .intro-text h4.subtitle {
       font-weight: 500;
       padding-top: 10px; }
@@ -617,15 +622,48 @@ header.masthead {
       border-radius: 50px;
       background-color: #fed136;
       color: #212529; }
-  header.masthead .img-container {
-    padding-top: 20px; }
+  header.masthead .parallax-window {
+    height: 100vh;
+    background: transparent; }
 
 @media (min-width: 768px) {
-  #about.masthead {
-    background-color: #fcfcfc; }
-    #about.masthead .intro-text {
-      padding-top: 200px;
-      padding-bottom: 200px; } }
+  header.masthead {
+    padding: 150px 0;
+    height: 100vh;
+    width: 100vw; } }
+
+#thingsToDo .view {
+  margin: 30px auto 0;
+  position: relative; }
+
+#thingsToDo .view-first img {
+  object-fit: cover;
+  width: auto;
+  height: 300px; }
+
+#section-4 {
+  background-color: #000; }
+  #section-4 h3 {
+    color: #fff; }
+  #section-4 .btn-main-dark {
+    width: 100%;
+    color: #000;
+    text-transform: capitalize !important; }
+
+#section-5 .view {
+  margin: 30px auto 0;
+  position: relative; }
+
+#section-5 img {
+  object-fit: cover;
+  width: auto;
+  height: 300px; }
+
+#section-5 .caption {
+  text-align: left;
+  padding: 10px 0; }
+  #section-5 .caption h2, #section-5 .caption p {
+    color: #000; }
 
 .service-heading {
   margin: 15px 0;
@@ -634,35 +672,6 @@ header.masthead {
 @media (max-width: 767px) {
   #services section h3.section-subheading {
     margin-bottom: 25px; } }
-
-@media (min-width: 768px) {
-  .section-image .img-container {
-    margin-top: -60px; }
-  .section-big-image .img-container {
-    margin-top: -20px; }
-  .custom-fit-content .img-fluid {
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content; }
-  #overview-1 p {
-    padding-right: 70px; }
-  #booking-overview-2 .img-fluid,
-  #elearning-overview-2 .img-fluid,
-  #security-overview-2 .img-fluid,
-  #cleaning-overview-2 .img-fluid {
-    margin-left: -34%; }
-  #about-overview-1,
-  #about-overview-2,
-  #about-overview-3 {
-    padding: 100px 0 30px; }
-    #about-overview-1 p,
-    #about-overview-2 p,
-    #about-overview-3 p {
-      font-size: 20px; }
-    #about-overview-1 .img-fluid,
-    #about-overview-2 .img-fluid,
-    #about-overview-3 .img-fluid {
-      margin: 4% auto 0; } }
 
 #getstarted {
   background-color: #fed136; }

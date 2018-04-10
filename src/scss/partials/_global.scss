@@ -47,7 +47,7 @@ section {
 }
 @media(min-width:768px) {
   section {
-    padding: 150px 0 100px;
+    padding: 100px 0 30px;
   }
 }
 
@@ -99,6 +99,10 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: $primary;
+}
+
+.no-padding {
+  padding: 0 !important;
 }
 
 .shadow-100 {
