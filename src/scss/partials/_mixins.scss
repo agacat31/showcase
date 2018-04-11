@@ -20,3 +20,12 @@
 @mixin heading-font {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+@mixin hero {
+  font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin hero-light {
+  font-family: 'Hero-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin hero-bold {
+  font-family: 'Hero-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

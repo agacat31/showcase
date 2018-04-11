@@ -1,6 +1,6 @@
 // Styling for the navbar
 #mainNav {
-  background-color: $gray-900;
+  background-color: $white;
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -9,7 +9,7 @@
     color: white;
     border: 0;
     background-color: $primary;
-    @include heading-font;
+    @include hero;
   }
   .navbar-brand {
     color: $primary;
@@ -28,8 +28,9 @@
         font-weight: 400;
         padding: 0.75em 0;
         letter-spacing: 1px;
-        color: $gray-900;
-        @include heading-font;
+        color: $white;
+        text-transform: uppercase;
+        @include hero;
         &.active,
         &:hover {
           color: $primary;
@@ -74,7 +75,9 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-900;
+      background-color: $white;
+      border-bottom: solid 1px #e1e1e5;
+
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
@@ -82,16 +85,16 @@
       .navbar-nav {
         .nav-item {
           .nav-link {
-            color: white;
+            color: $gray-900;
             &.active,
             &:hover {
               color: $primary;
             }
           }
           .dropdown-menu {
-            background-color: $gray-900;
+            background-color: $white;
             .dropdown-item {
-              color: $white;
+              color: $gray-900;
               &.active,
               &:hover {
                 color: $primary;

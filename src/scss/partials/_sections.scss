@@ -1,5 +1,50 @@
 // Styling for the sections
 
+#section-about {
+	p {
+		@include hero;
+		padding: 0 10%;
+	}
+}
+
+#section-team {
+	background-color: #000;
+	color: $white;
+
+	p {
+		@include hero;
+	}
+
+	.view {
+		margin: 30px auto 0;
+		position: relative;
+	}
+
+	img {
+	   object-fit: cover;
+	   width: auto;
+	   max-width: 240px;
+	}
+
+	.caption {
+		padding: 10px 0;
+		@include hero;
+		h4 {
+			margin-bottom: 0 !important;
+			margin-top: .5rem!important;
+			color: $primary;
+		}
+		p {
+			@include hero-light;
+			font-size: 14px;
+			font-style: normal;
+		}
+	}
+	hr {
+		border-top: 2px solid $primary;
+	}
+}
+
 #thingsToDo {
 	.view {
 	   margin: 30px auto 0;

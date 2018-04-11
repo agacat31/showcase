@@ -1,26 +1,26 @@
 // Styling for the masthead
 header.masthead {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.6);
+  height: 100vh;
+  width: 100vw;
   text-align: center;
-  color: $gray-900;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
   @include background-cover;
   .intro-text {
-    padding-top: 110px;
+    padding-top: 90px;
     color: $white;
 
-    h4.subtitle {
-      font-weight: 500;
+    h3.subtitle {
       padding-top: 10px;
+      color: $white;
+      font-weight: normal;
+      @include hero-light;
     }
 
-    .btn-signup {
+    .btn-white-paper {
       padding: 10px 60px;
-      border-radius: 50px;
       background-color: $primary;
       color: $gray-900;
+      @include hero-light;
     }
   }
 
@@ -33,8 +33,6 @@ header.masthead {
 @media(min-width:768px) {
   header.masthead {
     padding: 150px 0;
-    height: 100vh;
-    width: 100vw;
   }
 
 }
