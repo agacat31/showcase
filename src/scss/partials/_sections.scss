@@ -45,16 +45,40 @@
 	}
 }
 
-#thingsToDo {
+#section-additional {
+	background-color: #000;
+	color: $white;
+
+	h4 {
+		color: $primary;
+	}
+
+	p {
+		@include hero;
+		padding: 0 10%;
+	}
+
+	hr {
+		border-top: 2px solid $primary;
+	}
+}
+
+#gallery {
 	.view {
 	   margin: 30px auto 0;
 	   position: relative;
 	}
 
-	.view-first img {
-	   object-fit: cover;
-	   width: auto;
-	   height: 300px;
+	.view-first {
+		p {
+	   		@include hero;
+	   		font-style: normal;
+	   	}
+	   	img {
+		   object-fit: cover;
+		   width: auto;
+		   height: 300px;
+		}
 	}
 }
 

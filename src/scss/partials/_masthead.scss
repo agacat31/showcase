@@ -15,13 +15,6 @@ header.masthead {
       font-weight: normal;
       @include hero-light;
     }
-
-    .btn-white-paper {
-      padding: 10px 60px;
-      background-color: $primary;
-      color: $gray-900;
-      @include hero-light;
-    }
   }
 
   .parallax-window {
