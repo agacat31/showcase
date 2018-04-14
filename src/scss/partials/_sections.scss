@@ -5,6 +5,12 @@
 		@include hero;
 		padding: 0 10%;
 	}
+
+	.about-heading {
+	  padding-top: 38px;
+	  margin: 15px 0;
+	  text-transform: none;
+	}
 }
 
 #section-team {
@@ -61,9 +67,15 @@
 	hr {
 		border-top: 2px solid $primary;
 	}
+
+	.about-heading {
+	  padding-top: 30px;
+	  margin: 15px 0;
+	  text-transform: none;
+	}
 }
 
-#gallery {
+#section-gallery {
 	.view {
 	   margin: 30px auto 0;
 	   position: relative;
@@ -81,6 +93,71 @@
 		}
 	}
 }
+
+#section-faq {
+	background-color: #000;
+	color: $white;
+	@include hero;
+
+	#accordion {
+		h3 {
+			@include hero-light;
+			border-bottom: solid 1px $primary;
+		    padding-bottom: 15px;
+		    margin-bottom: 15px;
+		}
+	}
+}
+
+#section-video-big {
+	background-color: #000;
+}
+
+#section-subscribe {
+	h5 {
+		@include hero-bold;
+	}
+
+	input.form-control {
+		height: 48px;
+		border-radius: 50px;
+		padding-left: 20px;
+    	padding-right: 20px;
+	}
+
+	button {
+		padding: 15px 60px;
+	    border-radius: 50px;
+	    background-color: $gray-900;
+	    color: $primary;
+	}
+}
+
+@media(min-width:768px) {
+	#section-subscribe {
+		padding: 90px 0 100px;
+
+		input.form-control {
+			padding-right: 54px;
+		}
+		
+		button {
+			margin-left: -50px;
+		    margin-top: -2px;
+		}
+	}
+}
+
+@media(max-width:767px) {
+	#services {
+		section {
+			h3.section-subheading {
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
+
 
 
 
@@ -116,21 +193,6 @@
 		
 		h2, p {
 			color: #000;
-		}
-	}
-}
-
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
-}
-
-@media(max-width:767px) {
-	#services {
-		section {
-			h3.section-subheading {
-				margin-bottom: 25px;
-			}
 		}
 	}
 }

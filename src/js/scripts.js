@@ -13,5 +13,6 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+  $("#section-faq .panel-heading").addClass("collapsed");
 
 })(jQuery); // End of use strict
