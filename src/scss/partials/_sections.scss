@@ -11,6 +11,12 @@
 	  margin: 15px 0;
 	  text-transform: none;
 	}
+
+	.img-container {
+		img {
+			max-width: 200px;
+		}
+	}
 }
 
 #section-team {

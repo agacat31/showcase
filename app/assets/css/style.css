@@ -634,7 +634,9 @@ footer {
       text-align: center; }
       footer .container .copyright-container hr {
         margin-right: 70px;
-        margin-left: 70px; } }
+        margin-left: 70px; }
+    footer .container .footer-logo-container img {
+      max-width: 100px; } }
 
 header.masthead {
   background: rgba(0, 0, 0, 0.6);
@@ -666,6 +668,9 @@ header.masthead {
   padding-top: 38px;
   margin: 15px 0;
   text-transform: none; }
+
+#section-about .img-container img {
+  max-width: 200px; }
 
 #section-team {
   background-color: #000;
