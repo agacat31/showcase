@@ -1,9 +1,9 @@
 /*!
- * Adeptforms
- * We Automate Every Process Paper to Paperless
- * https://adeptforms.com
+ * Seeds
+ * Seeds
+ * https://agacat31.github.io/myprofile/
  * @author Aga Atmaja
- * @version 1.0.5
+ * @version 1.0.0
  * Copyright 2018. MIT licensed.
  */
 (function($) {
@@ -21,6 +21,21 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
+  /* Grid masonry view animation
+    new AnimOnScroll( document.getElementById( 'grid' ), {
+    minDuration : 0.4,
+    maxDuration : 0.7,
+    viewportFactor : 0.2
+  });*/
+
+  // Parallax Header
+  $('.parallax-window').parallax({
+    imageSrc: '/assets/img/mainbg.png',
+    speed: 0.5
+  });
+
+  // FAQ icon switch
   $("#section-faq .panel-heading").addClass("collapsed");
 
 })(jQuery); // End of use strict

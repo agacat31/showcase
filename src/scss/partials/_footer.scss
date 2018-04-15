@@ -1,13 +1,13 @@
 // Styling for the footer
 footer {
-  background-color: $gray-900;
+  background-color: $black;
   padding: 60px 0 30px;
 
   .list-footer-container {
     color: #fff;
     font-family: Helvetica;
 
-    h5 {
+    h4 {
       margin-bottom: 20px;
     }
 
@@ -17,6 +17,7 @@ footer {
 
       .list-footer-item {
         a {
+          @include hero;
           color: #fff;
         }
       }
@@ -24,8 +25,6 @@ footer {
   }
 
   .copyright-container {
-    text-align: right;
-
     hr {
       border-top: 1px solid $hr-on-black;
       margin-right: 4px;
@@ -45,12 +44,11 @@ footer {
 
     ul.social-buttons {
       margin-bottom: 0;
-      padding-top: 90px;
-
+      
       li {
         text-align: center;
         a {
-          font-size: 17px;
+          font-size: 20px;
           line-height: 37px;
           display: block;
           width: 40px;
@@ -58,17 +56,42 @@ footer {
           -webkit-transition: all 0.3s;
           -moz-transition: all 0.3s;
           transition: all 0.3s;
-          color: white;
+          color: $black;
           border-radius: 100%;
           border: solid 1px $border-social-on-black;
           outline: none;
-          background-color: $gray-900;
+          background-color: $white;
           &:active,
           &:focus,
           &:hover {
             background-color: $primary;
             border: solid 1px $primary;
+            color: $black;
           }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:768px) {
+  footer {
+    .container {
+      
+      .footer-item-content {
+        padding: 0 6%;
+
+        &:not(:nth-child(3)) {
+          border-right: solid 1px $primary;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      .footer-logo-container {
+        img {
+          max-width: 40%;
         }
       }
     }
@@ -84,11 +107,22 @@ footer {
         text-align: center;
       }
 
+      .footer-item-content {
+        padding: 0 6%;
+
+        &:not(first-child) {
+          padding-top: 25px;
+        }
+        &:last-child {
+          margin-bottom: 50px;
+        }
+      }
+
       .copyright-container {
         text-align: center;
 
         ul.social-buttons {
-          padding-top: 50px;
+          
         }
 
         hr {

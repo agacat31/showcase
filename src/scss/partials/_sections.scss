@@ -42,8 +42,9 @@
 		}
 		p {
 			@include hero-light;
-			font-size: 14px;
+			font-size: 15px;
 			font-style: normal;
+			color: $gray-500;
 		}
 	}
 	hr {
@@ -100,10 +101,10 @@
 	@include hero;
 
 	#accordion {
-		h3 {
+		h4 {
 			@include hero-light;
 			border-bottom: solid 1px $primary;
-		    padding-bottom: 15px;
+		    padding: 15px 0;
 		    margin-bottom: 15px;
 		}
 	}
@@ -114,36 +115,27 @@
 }
 
 #section-subscribe {
+	padding: 75px 0;
 	h5 {
 		@include hero-bold;
 	}
 
 	input.form-control {
-		height: 48px;
-		border-radius: 50px;
 		padding-left: 20px;
     	padding-right: 20px;
 	}
 
 	button {
-		padding: 15px 60px;
-	    border-radius: 50px;
-	    background-color: $gray-900;
-	    color: $primary;
+		background-color: $primary;
+	    color: $gray-900;
+	    text-transform: capitalize !important;
 	}
 }
 
 @media(min-width:768px) {
 	#section-subscribe {
-		padding: 90px 0 100px;
-
-		input.form-control {
-			padding-right: 54px;
-		}
-		
 		button {
-			margin-left: -50px;
-		    margin-top: -2px;
+			padding: 0 40px;
 		}
 	}
 }
