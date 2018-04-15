@@ -32,7 +32,7 @@
   // Parallax Header
   $('.parallax-window').parallax({
     //imageSrc: '/assets/img/mainbg.png',
-    imageSrc: 'showcase/app/assets/img/mainbg.png',
+    imageSrc: 'app/assets/img/mainbg.png',
     speed: 0.5
   });
 
