@@ -1,6 +1,7 @@
 // Styling for the sections
 
 #section-about {
+	background-color: $white;
 	p {
 		@include hero;
 		padding: 0 10%;
@@ -20,7 +21,7 @@
 }
 
 #section-team {
-	background-color: #000;
+	background-color: $black;
 	color: $white;
 
 	p {
@@ -59,7 +60,7 @@
 }
 
 #section-additional {
-	background-color: #000;
+	background-color: $black;
 	color: $white;
 
 	h4 {
@@ -83,6 +84,7 @@
 }
 
 #section-gallery {
+	background-color: $white;
 	.view {
 	   margin: 30px auto 0;
 	   position: relative;
@@ -102,7 +104,7 @@
 }
 
 #section-faq {
-	background-color: #000;
+	background-color: $black;
 	color: $white;
 	@include hero;
 
@@ -117,11 +119,14 @@
 }
 
 #section-video-big {
-	background-color: #000;
+	background-color: $black;
 }
 
 #section-subscribe {
 	padding: 75px 0;
+	margin-bottom: 248px;
+    background-color: $white;
+
 	h5 {
 		@include hero-bold;
 	}
@@ -163,7 +168,7 @@
 	background-color: #000;
 
 	h3 {
-		color: #fff;
+		color: $white;
 	}
 
 	.btn-main-dark {

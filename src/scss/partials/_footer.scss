@@ -2,6 +2,10 @@
 footer {
   background-color: $black;
   padding: 60px 0 30px;
+  position: fixed;
+  bottom: 0;
+  width: -webkit-fill-available;
+  z-index: -1;
 
   .list-footer-container {
     color: #fff;
@@ -58,7 +62,7 @@ footer {
           transition: all 0.3s;
           color: $black;
           border-radius: 100%;
-          border: solid 1px $border-social-on-black;
+          border: solid 1px $black;
           outline: none;
           background-color: $white;
           &:active,

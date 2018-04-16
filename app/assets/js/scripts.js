@@ -29,12 +29,15 @@
     viewportFactor : 0.2
   });*/
 
+  // WOW JS
+  new WOW().init();
+
   // Parallax Header
-  $('.parallax-window').parallax({
-    //imageSrc: '/assets/img/mainbg.png',
-    imageSrc: 'app/assets/img/mainbg.png',
+  /*$('.parallax-window').parallax({
+    imageSrc: '/assets/img/mainbg.png',
+    //imageSrc: 'app/assets/img/mainbg.png',
     speed: 0.5
-  });
+  });*/
 
   // FAQ icon switch
   $("#section-faq .panel-heading").addClass("collapsed");

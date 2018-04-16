@@ -111,3 +111,40 @@ body {
 .shadow-100 {
   @include vendor(box-shadow, 0px 3px 13px 0px #e1e1e5);
 }
+
+.delay-0-1 {
+  @include vendor(animation-delay, 0.1s);
+}
+.delay-0-2 {
+  @include vendor(animation-delay, 0.2s);
+}
+.delay-0-3 {
+  @include vendor(animation-delay, 0.3s);
+}
+.delay-0-4 {
+  @include vendor(animation-delay, 0.4s);
+}
+.delay-0-5 {
+  @include vendor(animation-delay, 0.5s);
+}
+.delay-0-6 {
+  @include vendor(animation-delay, 0.6s);
+}
+.delay-0-7 {
+  @include vendor(animation-delay, 0.7s);
+}
+.delay-0-8 {
+  @include vendor(animation-delay, 0.8s);
+}
+.delay-0-9 {
+  @include vendor(animation-delay, 0.9s);
+}
+.delay-1 {
+  @include vendor(animation-delay, 1s);
+}
+.delay-1-5 {
+  @include vendor(animation-delay, 1.5s);
+}
+.delay-2 {
+  @include vendor(animation-delay, 2s);
+}

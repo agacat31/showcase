@@ -2,19 +2,19 @@
 // SCSS MIXINS
 //----------------------------------*/
 
-@import 'mixins/_position.scss';
-@import 'mixins/_vendor.scss';
+@import 'mixins/position.scss';
+@import 'mixins/vendor.scss';
 
 //----------------------------------*\
 // CONFIG MODULES
 //----------------------------------*/
 
 // Config modules
-@import 'modules/_vars.scss';
-@import 'modules/_clearfix.scss';
-@import 'modules/_defaults.scss';
-@import 'modules/_normalize.scss';
-@import 'modules/_typography.scss';
+@import 'modules/vars.scss';
+@import 'modules/clearfix.scss';
+@import 'modules/defaults.scss';
+@import 'modules/normalize.scss';
+@import 'modules/typography.scss';
 //----------------------------------*\
 // PARTIALS
 //----------------------------------*/
@@ -33,14 +33,14 @@
 //----------------------------------*\
 // OBJECTS & MODULES
 //----------------------------------*/
-@import 'modules/_misc.scss';
+@import 'modules/misc.scss';
 
 // Enhancement modules
-@import 'modules/_breakpoints.scss';
-@import 'modules/_print.scss';
+@import 'modules/breakpoints.scss';
+@import 'modules/print.scss';
 
 //----------------------------------*\
 // VENDOR
 //----------------------------------*/
 
-@import 'vendor/_external.scss';
+@import 'vendor/external.scss';

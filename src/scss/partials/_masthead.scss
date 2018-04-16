@@ -1,10 +1,29 @@
+@keyframes testTransform {
+  @include vendor(transform, scale(1) translateZ(0));
+}
+
 // Styling for the masthead
 header.masthead {
-  background: rgba(0,0,0,0.6);
   height: 100vh;
   width: 100vw;
   text-align: center;
-  @include background-cover;
+
+  .inner-wrap {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('../img/mainbg.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    @include vendor(transform, scale(1) translateZ(0));
+    @include vendor(transition, transform 0.95s 0s cubic-bezier(0.3,0.58,0.42,0.9));
+    @include background-cover;
+  }
+
   .intro-text {
     padding-top: 90px;
     color: $white;
@@ -25,7 +44,9 @@ header.masthead {
 
 @media(min-width:768px) {
   header.masthead {
-    padding: 150px 0;
+    .inner-wrap {
+      padding: 150px 0;
+    }
   }
 
 }
