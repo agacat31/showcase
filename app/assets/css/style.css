@@ -600,7 +600,6 @@ body {
 footer {
   background-color: #000;
   padding: 60px 0 30px;
-  position: fixed;
   bottom: 0;
   width: -webkit-fill-available;
   z-index: -1; }
@@ -678,26 +677,41 @@ footer {
     footer .container .footer-logo-container img {
       max-width: 100px; } }
 
-@keyframes testTransform {
-  -ms-transform: scale(1) translateZ(0);
-  transform: scale(1) translateZ(0); }
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: scale(1.3); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
 
 header.masthead {
   height: 100vh;
   width: 100vw;
-  text-align: center; }
-  header.masthead .inner-wrap {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/mainbg.png");
-    background-position: left top;
-    background-repeat: no-repeat;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  perspective: 100px;
+  position: relative;
+  transform-style: preserve-3d; }
+  header.masthead:before {
+    animation: fade-slide-down 1.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+    opacity: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/mainbg.png") no-repeat bottom;
     background-attachment: fixed;
-    height: 100%;
-    -ms-transform: scale(1) translateZ(0);
-    transform: scale(1) translateZ(0);
-    transition: transform 0.95s 0s cubic-bezier(0.3, 0.58, 0.42, 0.9);
-    background-size: cover; }
+    background-size: cover;
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0; }
   header.masthead .intro-text {
-    padding-top: 90px;
+    padding-top: 60px;
     color: #fff; }
     header.masthead .intro-text h3.subtitle {
       padding-top: 10px;
@@ -762,7 +776,6 @@ header.masthead {
   #section-additional hr {
     border-top: 2px solid #FFEB00; }
   #section-additional .about-heading {
-    padding-top: 30px;
     margin: 15px 0;
     text-transform: none; }
 
@@ -794,7 +807,6 @@ header.masthead {
 
 #section-subscribe {
   padding: 75px 0;
-  margin-bottom: 248px;
   background-color: #fff; }
   #section-subscribe h5 {
     font-family: 'Hero-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
