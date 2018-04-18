@@ -39,10 +39,10 @@
     speed: 0.5
   });*/
 
-  $(document).ready(function() {
-    // FAQ icon switch
-    $("#section-faq .panel-heading").addClass("collapsed");
+  // FAQ icon switch
+  $("#section-faq .panel-heading").addClass("collapsed");
 
+  $(window).on("load", function() {
     // Preloader
     var onLoadPage;
 
@@ -56,6 +56,6 @@
     }
 
     loadPage()
-  })
+  });
 
 })(jQuery); // End of use strict
