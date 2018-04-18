@@ -43,7 +43,7 @@ footer {
       line-height: 40px;
       padding-right: 4px;
       text-transform: none;
-      @include heading-font;
+      @include hero;
     }
 
     ul.social-buttons {

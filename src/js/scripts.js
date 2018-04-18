@@ -31,7 +31,23 @@
     speed: 0.5
   });*/
 
-  // FAQ icon switch
-  $("#section-faq .panel-heading").addClass("collapsed");
+  $(document).ready(function() {
+    // FAQ icon switch
+    $("#section-faq .panel-heading").addClass("collapsed");
+
+    // Preloader
+    var onLoadPage;
+
+    function loadPage() {
+        onLoadPage = setTimeout(showPage, 2000);
+    }
+
+    function showPage() {
+      $('#loader').fadeOut();
+      $('.wrapper').fadeIn();
+    }
+
+    loadPage()
+  })
 
 })(jQuery); // End of use strict
