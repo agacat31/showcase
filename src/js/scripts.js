@@ -21,9 +21,6 @@
     viewportFactor : 0.2
   });*/
 
-  // WOW JS
-  new WOW().init();
-
   // Parallax Header
   /*$('.parallax-window').parallax({
     imageSrc: '/assets/img/mainbg.png',
@@ -45,6 +42,8 @@
     function showPage() {
       $('#loader').fadeOut();
       $('.wrapper').fadeIn();
+      // WOW JS
+      new WOW().init();
     }
 
     loadPage()
