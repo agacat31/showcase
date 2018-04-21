@@ -28,6 +28,19 @@
     speed: 0.5
   });*/
 
+  // Check width
+  var $window = $(window);
+  
+  function checkWidth() {
+      var windowsize = $window.width();
+      if (windowsize < 768) {
+          //if the window is greater than 440px wide then turn on jScrollPane..
+          $('#mainNav').removeClass('fixed-top');
+      }
+  }
+  // Execute on load
+  checkWidth();
+
   // FAQ icon switch
   $("#section-faq .panel-heading").addClass("collapsed");
 
@@ -43,7 +56,13 @@
       $('#loader').fadeOut();
       $('.wrapper').fadeIn();
       // WOW JS
-      new WOW().init();
+      var wow = new WOW(
+        {
+          boxClass: 'wow',
+          mobile: false
+        }
+      );
+      wow.init();
     }
 
     loadPage()

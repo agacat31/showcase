@@ -41,7 +41,6 @@ header.masthead {
   }
 
   .intro-text {
-    padding-top: 60px;
     color: $white;
 
     h3.subtitle {
@@ -60,8 +59,8 @@ header.masthead {
 
 @media(min-width:768px) {
   header.masthead {
-    .inner-wrap {
-      padding: 150px 0;
+    .intro-text {
+      padding-top: 60px;
     }
   }
 

@@ -8,7 +8,6 @@
 	}
 
 	.about-heading {
-	  padding-top: 38px;
 	  margin: 15px 0;
 	  text-transform: none;
 	}
@@ -144,6 +143,11 @@
 }
 
 @media(min-width:768px) {
+	#section-about {
+		.about-heading {
+		  padding-top: 38px;
+		}
+	}
 	#section-subscribe {
 		button {
 			padding: 0 40px;
@@ -164,7 +168,10 @@
 
 
 
-#section-4 {
+
+
+
+/* #section-4 {
 	background-color: #000;
 
 	h3 {
@@ -198,4 +205,4 @@
 			color: #000;
 		}
 	}
-}
+} */
