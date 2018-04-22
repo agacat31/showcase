@@ -42,7 +42,6 @@
   function checkWidth() {
       var windowsize = $window.width();
       if (windowsize < 768) {
-          //if the window is greater than 440px wide then turn on jScrollPane..
           $('#mainNav').removeClass('fixed-top');
       }
   }
@@ -72,8 +71,9 @@
       );
       wow.init();
     }
-
-    loadPage()
+    $('header.masthead:before').waitForImages(function() {
+        loadPage();
+    });
   });
 
 })(jQuery); // End of use strict
