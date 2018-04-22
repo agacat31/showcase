@@ -20,15 +20,13 @@ header.masthead {
   perspective: 100px;
   position: relative;
   transform-style: preserve-3d;
+  animation: fade-slide-down 1.5s cubic-bezier(0, .5, 0, 1) forwards;
 
-  &:before {
-    animation: fade-slide-down 1.5s cubic-bezier(0, .5, 0, 1) forwards;
-    opacity: 0;
+  .bg-wrapper {
     background: linear-gradient(
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
-      ),
-      url('../img/mainbg.png') no-repeat bottom;
+      );
     background-attachment: fixed;
     @include background-cover;
     content: "";

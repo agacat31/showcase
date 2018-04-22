@@ -701,11 +701,10 @@ header.masthead {
   overflow: hidden;
   perspective: 100px;
   position: relative;
-  transform-style: preserve-3d; }
-  header.masthead:before {
-    animation: fade-slide-down 1.5s cubic-bezier(0, 0.5, 0, 1) forwards;
-    opacity: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/mainbg.png") no-repeat bottom;
+  transform-style: preserve-3d;
+  animation: fade-slide-down 1.5s cubic-bezier(0, 0.5, 0, 1) forwards; }
+  header.masthead .bg-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     background-attachment: fixed;
     background-size: cover;
     content: "";

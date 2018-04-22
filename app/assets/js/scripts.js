@@ -51,29 +51,38 @@
   // FAQ icon switch
   $("#section-faq .panel-heading").addClass("collapsed");
 
-  $(window).on("load", function() {
-    // Preloader
-    var onLoadPage;
+  $('.bg-wrapper').lazy({
+      afterLoad: function(element) {
+          // Preloader
+          var onLoadPage;
 
-    function loadPage() {
-        onLoadPage = setTimeout(showPage, 2000);
-    }
+          var loadPage = function() {
+              onLoadPage = setTimeout(showPage, 2000);
+          }
 
-    function showPage() {
-      $('#loader').fadeOut();
-      $('.wrapper').fadeIn();
-      // WOW JS
-      var wow = new WOW(
-        {
-          boxClass: 'wow',
-          mobile: false
-        }
-      );
-      wow.init();
-    }
-    $('header.masthead:before').waitForImages(function() {
-        loadPage();
-    });
+          var showPage = function() {
+            $('#loader').fadeOut();
+            $('.wrapper').fadeIn();
+            // WOW JS
+            var wow = new WOW(
+              {
+                boxClass: 'wow',
+                mobile: false
+              }
+            );
+            wow.init();
+          }
+          loadPage();
+      },
+
+      onError: function(element) {
+          var imageSrc = element.data('src');
+          console.log('image "' + imageSrc + '" could not be loaded');
+      },
+
+      onFinishedAll: function() {
+          //console.log('finished loading all images');
+      }
   });
 
 })(jQuery); // End of use strict
