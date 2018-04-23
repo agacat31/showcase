@@ -142,10 +142,34 @@
 	}
 }
 
+.scroll-top-wrapper {
+	position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    a {
+    	background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25));
+		color: #fff;
+		font-size: 26px;
+		text-align: center;
+		line-height: 41px;
+		display: block;
+		width: 45px;
+		height: 45px;
+		transition: all .3s;
+		border-radius: 100%;
+		outline: none;
+
+	    &:hover {
+	    	text-decoration: none;
+	    }
+    }
+}
+
 @media(min-width:768px) {
 	#section-about {
 		.about-heading {
-		  padding-top: 38px;
+		  padding-top: 30px;
 		}
 	}
 	#section-subscribe {

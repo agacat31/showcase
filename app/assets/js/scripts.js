@@ -9,12 +9,28 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 54)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
+
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 200) {
       $("#mainNav").addClass("navbar-shrink");
+      $(".scroll-top-wrapper").fadeIn();
     } else {
       $("#mainNav").removeClass("navbar-shrink");
+      $(".scroll-top-wrapper").fadeOut();
     }
   };
   // Collapse now if page is not at top
@@ -57,7 +73,7 @@
           var onLoadPage;
 
           var loadPage = function() {
-              onLoadPage = setTimeout(showPage, 2000);
+              onLoadPage = setTimeout(showPage, 1000);
           }
 
           var showPage = function() {
