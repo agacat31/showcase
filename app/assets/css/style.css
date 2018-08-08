@@ -426,13 +426,13 @@ h6 {
   font-weight: 700;
   font-family: 'Hero-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
-section {
+.section {
   padding: 50px 0; }
-  section h2.section-heading {
+  .section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px; }
-  section h3.section-subheading {
+  .section h3.section-subheading {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 75px;
@@ -605,29 +605,29 @@ body {
     #mainNav .container .navbar-nav .nav-item .btn-sign-nav {
       margin: 5px 0; } }
 
-footer {
+#page-top #footer {
   background-color: #000;
   padding: 60px 0 30px;
   bottom: 0;
   width: -webkit-fill-available;
   z-index: -1; }
-  footer .list-footer-container {
+  #page-top #footer .list-footer-container {
     color: #fff;
     font-family: Helvetica; }
-    footer .list-footer-container h4 {
+    #page-top #footer .list-footer-container h4 {
       margin-bottom: 20px; }
-    footer .list-footer-container ul.list-footer {
+    #page-top #footer .list-footer-container ul.list-footer {
       list-style: none;
       padding-left: 0; }
-      footer .list-footer-container ul.list-footer .list-footer-item a {
+      #page-top #footer .list-footer-container ul.list-footer .list-footer-item a {
         font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         color: #fff; }
-  footer .copyright-container hr {
+  #page-top #footer .copyright-container hr {
     border-top: 1px solid #464a4c;
     margin-right: 4px;
     margin-left: 60px;
     margin-bottom: 0; }
-  footer .copyright-container small.copyright {
+  #page-top #footer .copyright-container small.copyright {
     font-size: 70%;
     font-family: Helvetica;
     font-weight: 600;
@@ -635,11 +635,11 @@ footer {
     padding-right: 4px;
     text-transform: none;
     font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  footer .copyright-container ul.social-buttons {
+  #page-top #footer .copyright-container ul.social-buttons {
     margin-bottom: 0; }
-    footer .copyright-container ul.social-buttons li {
+    #page-top #footer .copyright-container ul.social-buttons li {
       text-align: center; }
-      footer .copyright-container ul.social-buttons li a {
+      #page-top #footer .copyright-container ul.social-buttons li a {
         font-size: 20px;
         line-height: 37px;
         display: block;
@@ -651,7 +651,7 @@ footer {
         border: solid 1px #000;
         outline: none;
         background-color: #fff; }
-        footer .copyright-container ul.social-buttons li a:active, footer .copyright-container ul.social-buttons li a:focus, footer .copyright-container ul.social-buttons li a:hover {
+        #page-top #footer .copyright-container ul.social-buttons li a:active, #page-top #footer .copyright-container ul.social-buttons li a:focus, #page-top #footer .copyright-container ul.social-buttons li a:hover {
           background-color: #FFEB00;
           border: solid 1px #FFEB00;
           color: #000; }
@@ -693,7 +693,11 @@ footer {
     opacity: 1;
     transform: scale(1); } }
 
-header.masthead {
+#page-top.has-header-image:not(.twentyseventeen-front-page):not(.home) header.masthead,
+#page-top.has-header-video:not(.twentyseventeen-front-page):not(.home) header.masthead {
+  height: 20vh; }
+
+#page-top header.masthead {
   height: 100vh;
   width: 100vw;
   -ms-flex-align: center;
@@ -706,7 +710,7 @@ header.masthead {
   position: relative;
   transform-style: preserve-3d;
   animation: fade-slide-down 1.5s cubic-bezier(0, 0.5, 0, 1) forwards; }
-  header.masthead .bg-wrapper {
+  #page-top header.masthead .bg-wrapper {
     background-attachment: fixed;
     background-size: cover;
     content: "";
@@ -716,21 +720,21 @@ header.masthead {
     right: 0;
     left: 0;
     z-index: 0; }
-    header.masthead .bg-wrapper .layer {
+    #page-top header.masthead .bg-wrapper .layer {
       background-color: rgba(0, 0, 0, 0.6);
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%; }
-  header.masthead .intro-text {
+  #page-top header.masthead .intro-text {
     color: #fff; }
-    header.masthead .intro-text h3.subtitle {
+    #page-top header.masthead .intro-text h3.subtitle {
       padding-top: 10px;
       color: #fff;
       font-weight: normal;
       font-family: 'Hero-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  header.masthead .parallax-window {
+  #page-top header.masthead .parallax-window {
     height: 100vh;
     background: transparent; }
 
@@ -738,161 +742,153 @@ header.masthead {
   header.masthead .intro-text {
     padding-top: 60px; } }
 
-#section-about {
-  background-color: #fff; }
-  #section-about p {
-    font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding: 0 10%; }
-  #section-about .about-heading {
-    margin: 15px 0;
-    text-transform: none; }
-  #section-about .img-container img {
-    max-width: 200px; }
+#page-top {
+  /* #section-4 {
+		background-color: #000;
 
-#section-team {
-  background-color: #000;
-  color: #fff; }
-  #section-team p {
-    font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  #section-team .view {
-    margin: 30px auto 0;
-    position: relative; }
-  #section-team img {
-    object-fit: cover;
-    width: auto;
-    max-width: 240px; }
-  #section-team .caption {
-    padding: 10px 0;
-    font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-    #section-team .caption h4 {
-      margin-bottom: 0 !important;
-      margin-top: 0.5rem !important;
-      color: #FFEB00; }
-    #section-team .caption p {
-      font-family: 'Hero-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      font-style: normal;
-      color: #adb5bd; }
-  #section-team hr {
-    border-top: 2px solid #FFEB00; }
+		h3 {
+			color: $white;
+		}
 
-#section-additional {
-  background-color: #000;
-  color: #fff; }
-  #section-additional h4 {
-    color: #FFEB00; }
-  #section-additional p {
-    font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding: 0 10%; }
-  #section-additional hr {
-    border-top: 2px solid #FFEB00; }
-  #section-additional .about-heading {
-    margin: 15px 0;
-    text-transform: none; }
-
-#section-gallery {
-  background-color: #fff; }
-  #section-gallery .view {
-    margin: 30px auto 0;
-    position: relative; }
-  #section-gallery .view-first p {
-    font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-style: normal; }
-  #section-gallery .view-first img {
-    object-fit: cover;
-    width: auto;
-    height: 300px; }
-
-#section-faq {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  #section-faq #accordion h4 {
-    font-family: 'Hero-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    border-bottom: solid 1px #FFEB00;
-    padding: 15px 0;
-    margin-bottom: 15px; }
-
-#section-video-big {
-  background-color: #000; }
-
-#section-subscribe {
-  padding: 75px 0;
-  background-color: #fff; }
-  #section-subscribe h5 {
-    font-family: 'Hero-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  #section-subscribe input.form-control {
-    padding-left: 20px;
-    padding-right: 20px; }
-  #section-subscribe button {
-    background-color: #FFEB00;
-    color: #212529;
-    text-transform: capitalize !important; }
-
-.scroll-top-wrapper {
-  position: fixed;
-  bottom: 20px;
-  right: 20px; }
-  .scroll-top-wrapper a {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
-    color: #fff;
-    font-size: 26px;
-    text-align: center;
-    line-height: 41px;
-    display: block;
-    width: 45px;
-    height: 45px;
-    transition: all .3s;
-    border-radius: 100%;
-    outline: none; }
-    .scroll-top-wrapper a:hover {
-      text-decoration: none; }
-
-@media (min-width: 768px) {
-  #section-about .about-heading {
-    padding-top: 30px; }
-  #section-subscribe button {
-    padding: 0 40px; } }
-
-@media (max-width: 767px) {
-  #services section h3.section-subheading {
-    margin-bottom: 25px; } }
-
-/* #section-4 {
-	background-color: #000;
-
-	h3 {
-		color: $white;
-	}
-
-	.btn-main-dark {
-		width: 100%;
-	    color: #000;
-	    text-transform: capitalize !important;
-	}
-}
-
-#section-5 {
-	.view {
-		margin: 30px auto 0;
-		position: relative;
-	}
-
-	img {
-	   object-fit: cover;
-	   width: auto;
-	   height: 300px;
-	}
-
-	.caption {
-		text-align: left;
-		padding: 10px 0;
-		
-		h2, p {
-			color: #000;
+		.btn-main-dark {
+			width: 100%;
+		    color: #000;
+		    text-transform: capitalize !important;
 		}
 	}
-} */
+
+	#section-5 {
+		.view {
+			margin: 30px auto 0;
+			position: relative;
+		}
+
+		img {
+		   object-fit: cover;
+		   width: auto;
+		   height: 300px;
+		}
+
+		.caption {
+			text-align: left;
+			padding: 10px 0;
+			
+			h2, p {
+				color: #000;
+			}
+		}
+	} */ }
+  #page-top #section-about {
+    background-color: #fff; }
+    #page-top #section-about p {
+      font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      padding: 0 10%; }
+    #page-top #section-about .about-heading {
+      margin: 15px 0;
+      text-transform: none; }
+    #page-top #section-about .img-container img {
+      max-width: 200px; }
+  #page-top #section-team {
+    background-color: #000;
+    color: #fff; }
+    #page-top #section-team p {
+      font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #page-top #section-team .view {
+      margin: 30px auto 0;
+      position: relative; }
+    #page-top #section-team img {
+      object-fit: cover;
+      width: auto;
+      max-width: 240px; }
+    #page-top #section-team .caption {
+      padding: 10px 0;
+      font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      #page-top #section-team .caption h4 {
+        margin-bottom: 0 !important;
+        margin-top: 0.5rem !important;
+        color: #FFEB00; }
+      #page-top #section-team .caption p {
+        font-family: 'Hero-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        color: #adb5bd; }
+    #page-top #section-team hr {
+      border-top: 2px solid #FFEB00; }
+  #page-top #section-additional {
+    background-color: #000;
+    color: #fff; }
+    #page-top #section-additional h4 {
+      color: #FFEB00; }
+    #page-top #section-additional p {
+      font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      padding: 0 10%; }
+    #page-top #section-additional hr {
+      border-top: 2px solid #FFEB00; }
+    #page-top #section-additional .about-heading {
+      margin: 15px 0;
+      text-transform: none; }
+  #page-top #section-gallery {
+    background-color: #fff; }
+    #page-top #section-gallery .view {
+      margin: 30px auto 0;
+      position: relative; }
+    #page-top #section-gallery .view-first p {
+      font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-style: normal; }
+    #page-top #section-gallery .view-first img {
+      object-fit: cover;
+      width: auto;
+      height: 300px; }
+  #page-top #section-faq {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #page-top #section-faq #accordion h4 {
+      font-family: 'Hero-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      border-bottom: solid 1px #FFEB00;
+      padding: 15px 0;
+      margin-bottom: 15px; }
+  #page-top #section-video-big {
+    background-color: #000; }
+  #page-top #section-subscribe {
+    padding: 75px 0;
+    background-color: #fff; }
+    #page-top #section-subscribe h5 {
+      font-family: 'Hero-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #page-top #section-subscribe input.form-control {
+      padding-left: 20px;
+      padding-right: 20px; }
+    #page-top #section-subscribe button {
+      background-color: #FFEB00;
+      color: #212529;
+      text-transform: capitalize !important; }
+  #page-top .scroll-top-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; }
+    #page-top .scroll-top-wrapper a {
+      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+      color: #fff;
+      font-size: 26px;
+      text-align: center;
+      line-height: 41px;
+      display: block;
+      width: 45px;
+      height: 45px;
+      transition: all .3s;
+      border-radius: 100%;
+      outline: none; }
+      #page-top .scroll-top-wrapper a:hover {
+        text-decoration: none; }
+  @media (min-width: 768px) {
+    #page-top #section-about .about-heading {
+      padding-top: 30px; }
+    #page-top #section-subscribe button {
+      padding: 0 40px; } }
+  @media (max-width: 767px) {
+    #page-top #services section h3.section-subheading {
+      margin-bottom: 25px; } }
+
 #portfolioModal.portfolio-modal {
   padding-right: 0px !important;
   font-family: 'Hero', 'Helvetica Neue', Helvetica, Arial, sans-serif; }

@@ -1,232 +1,233 @@
 // Styling for the sections
+#page-top {
+	#section-about {
+		background-color: $white;
+		p {
+			@include hero;
+			padding: 0 10%;
+		}
 
-#section-about {
-	background-color: $white;
-	p {
-		@include hero;
-		padding: 0 10%;
-	}
+		.about-heading {
+		  margin: 15px 0;
+		  text-transform: none;
+		}
 
-	.about-heading {
-	  margin: 15px 0;
-	  text-transform: none;
-	}
-
-	.img-container {
-		img {
-			max-width: 200px;
+		.img-container {
+			img {
+				max-width: 200px;
+			}
 		}
 	}
-}
 
-#section-team {
-	background-color: $black;
-	color: $white;
+	#section-team {
+		background-color: $black;
+		color: $white;
 
-	p {
-		@include hero;
+		p {
+			@include hero;
+		}
+
+		.view {
+			margin: 30px auto 0;
+			position: relative;
+		}
+
+		img {
+		   object-fit: cover;
+		   width: auto;
+		   max-width: 240px;
+		}
+
+		.caption {
+			padding: 10px 0;
+			@include hero;
+			h4 {
+				margin-bottom: 0 !important;
+				margin-top: .5rem!important;
+				color: $primary;
+			}
+			p {
+				@include hero-light;
+				font-size: 15px;
+				font-style: normal;
+				color: $gray-500;
+			}
+		}
+		hr {
+			border-top: 2px solid $primary;
+		}
 	}
 
-	.view {
-		margin: 30px auto 0;
-		position: relative;
-	}
+	#section-additional {
+		background-color: $black;
+		color: $white;
 
-	img {
-	   object-fit: cover;
-	   width: auto;
-	   max-width: 240px;
-	}
-
-	.caption {
-		padding: 10px 0;
-		@include hero;
 		h4 {
-			margin-bottom: 0 !important;
-			margin-top: .5rem!important;
 			color: $primary;
 		}
+
 		p {
-			@include hero-light;
-			font-size: 15px;
-			font-style: normal;
-			color: $gray-500;
+			@include hero;
+			padding: 0 10%;
+		}
+
+		hr {
+			border-top: 2px solid $primary;
+		}
+
+		.about-heading {
+		  //padding-top: 30px;
+		  margin: 15px 0;
+		  text-transform: none;
 		}
 	}
-	hr {
-		border-top: 2px solid $primary;
+
+	#section-gallery {
+		background-color: $white;
+		.view {
+		   margin: 30px auto 0;
+		   position: relative;
+		}
+
+		.view-first {
+			p {
+		   		@include hero;
+		   		font-style: normal;
+		   	}
+		   	img {
+			   object-fit: cover;
+			   width: auto;
+			   height: 300px;
+			}
+		}
 	}
-}
 
-#section-additional {
-	background-color: $black;
-	color: $white;
-
-	h4 {
-		color: $primary;
-	}
-
-	p {
+	#section-faq {
+		background-color: $black;
+		color: $white;
 		@include hero;
-		padding: 0 10%;
+
+		#accordion {
+			h4 {
+				@include hero-light;
+				border-bottom: solid 1px $primary;
+			    padding: 15px 0;
+			    margin-bottom: 15px;
+			}
+		}
 	}
 
-	hr {
-		border-top: 2px solid $primary;
+	#section-video-big {
+		background-color: $black;
 	}
 
-	.about-heading {
-	  //padding-top: 30px;
-	  margin: 15px 0;
-	  text-transform: none;
-	}
-}
+	#section-subscribe {
+		padding: 75px 0;
+		//margin-bottom: 248px;
+	    background-color: $white;
 
-#section-gallery {
-	background-color: $white;
-	.view {
-	   margin: 30px auto 0;
-	   position: relative;
+		h5 {
+			@include hero-bold;
+		}
+
+		input.form-control {
+			padding-left: 20px;
+	    	padding-right: 20px;
+		}
+
+		button {
+			background-color: $primary;
+		    color: $gray-900;
+		    text-transform: capitalize !important;
+		}
 	}
 
-	.view-first {
-		p {
-	   		@include hero;
-	   		font-style: normal;
-	   	}
-	   	img {
+	.scroll-top-wrapper {
+		position: fixed;
+	    bottom: 20px;
+	    right: 20px;
+
+	    a {
+	    	background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25));
+			color: #fff;
+			font-size: 26px;
+			text-align: center;
+			line-height: 41px;
+			display: block;
+			width: 45px;
+			height: 45px;
+			transition: all .3s;
+			border-radius: 100%;
+			outline: none;
+
+		    &:hover {
+		    	text-decoration: none;
+		    }
+	    }
+	}
+
+	@media(min-width:768px) {
+		#section-about {
+			.about-heading {
+			  padding-top: 30px;
+			}
+		}
+		#section-subscribe {
+			button {
+				padding: 0 40px;
+			}
+		}
+	}
+
+	@media(max-width:767px) {
+		#services {
+			section {
+				h3.section-subheading {
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+	/* #section-4 {
+		background-color: #000;
+
+		h3 {
+			color: $white;
+		}
+
+		.btn-main-dark {
+			width: 100%;
+		    color: #000;
+		    text-transform: capitalize !important;
+		}
+	}
+
+	#section-5 {
+		.view {
+			margin: 30px auto 0;
+			position: relative;
+		}
+
+		img {
 		   object-fit: cover;
 		   width: auto;
 		   height: 300px;
 		}
-	}
-}
 
-#section-faq {
-	background-color: $black;
-	color: $white;
-	@include hero;
-
-	#accordion {
-		h4 {
-			@include hero-light;
-			border-bottom: solid 1px $primary;
-		    padding: 15px 0;
-		    margin-bottom: 15px;
-		}
-	}
-}
-
-#section-video-big {
-	background-color: $black;
-}
-
-#section-subscribe {
-	padding: 75px 0;
-	//margin-bottom: 248px;
-    background-color: $white;
-
-	h5 {
-		@include hero-bold;
-	}
-
-	input.form-control {
-		padding-left: 20px;
-    	padding-right: 20px;
-	}
-
-	button {
-		background-color: $primary;
-	    color: $gray-900;
-	    text-transform: capitalize !important;
-	}
-}
-
-.scroll-top-wrapper {
-	position: fixed;
-    bottom: 20px;
-    right: 20px;
-
-    a {
-    	background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25));
-		color: #fff;
-		font-size: 26px;
-		text-align: center;
-		line-height: 41px;
-		display: block;
-		width: 45px;
-		height: 45px;
-		transition: all .3s;
-		border-radius: 100%;
-		outline: none;
-
-	    &:hover {
-	    	text-decoration: none;
-	    }
-    }
-}
-
-@media(min-width:768px) {
-	#section-about {
-		.about-heading {
-		  padding-top: 30px;
-		}
-	}
-	#section-subscribe {
-		button {
-			padding: 0 40px;
-		}
-	}
-}
-
-@media(max-width:767px) {
-	#services {
-		section {
-			h3.section-subheading {
-				margin-bottom: 25px;
+		.caption {
+			text-align: left;
+			padding: 10px 0;
+			
+			h2, p {
+				color: #000;
 			}
 		}
-	}
+	} */
 }
-
-
-
-
-
-
-
-/* #section-4 {
-	background-color: #000;
-
-	h3 {
-		color: $white;
-	}
-
-	.btn-main-dark {
-		width: 100%;
-	    color: #000;
-	    text-transform: capitalize !important;
-	}
-}
-
-#section-5 {
-	.view {
-		margin: 30px auto 0;
-		position: relative;
-	}
-
-	img {
-	   object-fit: cover;
-	   width: auto;
-	   height: 300px;
-	}
-
-	.caption {
-		text-align: left;
-		padding: 10px 0;
-		
-		h2, p {
-			color: #000;
-		}
-	}
-} */

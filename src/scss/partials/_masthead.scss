@@ -9,8 +9,15 @@
   }
 }
 
+#page-top {
+  &.has-header-image:not(.twentyseventeen-front-page):not(.home) header.masthead, 
+  &.has-header-video:not(.twentyseventeen-front-page):not(.home) header.masthead {
+    height: 20vh;
+  }
+}
+
 // Styling for the masthead
-header.masthead {
+#page-top header.masthead {
   height: 100vh;
   width: 100vw;
   align-items: center;
