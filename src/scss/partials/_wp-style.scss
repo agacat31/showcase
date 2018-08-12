@@ -1,0 +1,27 @@
+#page-top {
+  .article-wrapper {
+    position: relative;
+
+    .edit-link {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  blockquote {
+    margin: 50px auto;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 35px;
+    border-left: 8px solid $primary;
+    line-height: 1.6;
+    position: relative;
+  }
+
+  @media(min-width: 768px) {
+    blockquote {
+      padding-left: 75px;
+    }
+  }
+}

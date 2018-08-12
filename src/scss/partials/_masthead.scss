@@ -52,8 +52,14 @@
 
   .intro-text {
     color: $white;
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
 
-    h3.subtitle {
+    .subtitle {
       padding-top: 10px;
       color: $white;
       font-weight: normal;

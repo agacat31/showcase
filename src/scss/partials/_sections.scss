@@ -1,5 +1,17 @@
 // Styling for the sections
 #page-top {
+	.section {
+		h3 {
+			font-size: 1.75rem;
+		}
+		h4 {
+			font-size: 1.5rem;
+		}
+		h5 {
+			font-size: 1.25rem;
+		}
+	}
+
 	#section-about {
 		background-color: $white;
 		p {
@@ -182,7 +194,7 @@
 	@media(max-width:767px) {
 		#services {
 			section {
-				h3.section-subheading {
+				.section-subheading {
 					margin-bottom: 25px;
 				}
 			}

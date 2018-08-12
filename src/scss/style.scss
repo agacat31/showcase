@@ -13,7 +13,6 @@
 @import 'modules/vars.scss';
 @import 'modules/clearfix.scss';
 @import 'modules/defaults.scss';
-@import 'modules/normalize.scss';
 @import 'modules/typography.scss';
 //----------------------------------*\
 // PARTIALS
@@ -30,6 +29,8 @@
 @import "partials/masthead.scss";
 @import "partials/sections.scss";
 @import "partials/modals.scss";
+// Wordpress
+@import "partials/wp-style.scss";
 
 //----------------------------------*\
 // OBJECTS & MODULES
