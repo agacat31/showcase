@@ -602,6 +602,12 @@ img::-moz-selection {
         transform: rotate(90deg);
         background-color: #212529; }
 
+#page-top #section-gallery .header-page {
+  display: none; }
+
+#page-top .wrap {
+  padding: 4em 0; }
+
 #page-top .article-wrapper {
   position: relative; }
   #page-top .article-wrapper .edit-link {
